@@ -144,13 +144,4 @@ def ResNet101():
 def ResNet152():
     return ResNet(Bottleneck, [3,8,36,3])
 
-'''
-def test():
-    honey = [5,6,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6]
-    model = resnet('resnet50', honey)
-    #print(model)
-
-test()
-'''
-
 
