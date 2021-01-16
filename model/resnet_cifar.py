@@ -132,13 +132,3 @@ def resnet(cfg, food= None, num_classes = 10):
         return resnet110(num_classes=num_classes, food=food)
 
 
-'''
-def test():
-    food = [1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,9]
-    model = resnet('resnet56', food)
-    print(model)
-
-test()
-'''
-
-
