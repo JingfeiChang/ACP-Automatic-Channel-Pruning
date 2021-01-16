@@ -4,3 +4,8 @@ As the convolutional neural network (CNN) gets deeper and wider in recent years,
 Any problem, free to contact the authors via emails: cjfhfut@mail.hfut.edu.cn
 ## Experimental Results
 We prune some CNNs on CIFAR10/100 and ImageNet dataset. The results are depicted as follows.
+### CIFAR-10
+
+### CIFAR-100
+
+### ImageNet
