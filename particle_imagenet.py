@@ -730,8 +730,6 @@ def main():
 
                 initialize()
 
-                # memorizeBestSource()
-
                 for cycle in range(args.max_cycle):
                     w = 0.5 * (8 - cycle) / 20 + 0.4
 
@@ -743,8 +741,6 @@ def main():
                     start_time = time.time()
 
                     PSOPruning()
-
-                    # memorizeBestSource()
 
                 print('==> PSOPruning Complete!')
 
