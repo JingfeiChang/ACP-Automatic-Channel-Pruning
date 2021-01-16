@@ -6,8 +6,8 @@ Any problem, free to contact the author via email: cjfhfut@mail.hfut.edu.cn
 We prune some CNNs on CIFAR10/100 and ImageNet dataset. The results are depicted as follows.
 ### CIFAR-10
 ![table1](https://github.com/JingfeiChang/ACP-Automatic-Channel-Pruning/blob/main/table/table1.png)
-![table1](https://github.com/JingfeiChang/ACP-Automatic-Channel-Pruning/blob/main/table/table2.png)
+![table2](https://github.com/JingfeiChang/ACP-Automatic-Channel-Pruning/blob/main/table/table2.png)
 ### CIFAR-100
-![table1](https://github.com/JingfeiChang/ACP-Automatic-Channel-Pruning/blob/main/table/table3.png)
+![table3](https://github.com/JingfeiChang/ACP-Automatic-Channel-Pruning/blob/main/table/table3.png)
 ### ImageNet
-![table1](https://github.com/JingfeiChang/ACP-Automatic-Channel-Pruning/blob/main/table/table4.png)
+![table4](https://github.com/JingfeiChang/ACP-Automatic-Channel-Pruning/blob/main/table/table4.png)
