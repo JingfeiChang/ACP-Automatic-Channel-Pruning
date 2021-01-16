@@ -1,1 +1,1 @@
-# ACP(Automatic-Channel-Pruning)
+# ACP (Automatic Channel Pruning)
