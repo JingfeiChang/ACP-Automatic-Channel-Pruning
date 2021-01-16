@@ -279,8 +279,7 @@ def load_vgg_particle_model(model, random_rule):
                     # enumerate() 
                     state_dict[name + '.weight'][:, index_i, :, :] = \
                         oristate_dict[name + '.weight'][:,i, :, :]
-                         
-                
+                                         
                 last_select_index = None
 
     model.load_state_dict(state_dict)
