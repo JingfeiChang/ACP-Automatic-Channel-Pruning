@@ -1,4 +1,5 @@
-# ACP (Automatic Channel Pruning)
+# ACP (Automatic Channel Pruning) [(Link)](https://github.com/JingfeiChang/ACP-Automatic-Channel-Pruning/edit/main/README.md)
+
 As the convolutional neural network (CNN) gets deeper and wider in recent years, the requirements for the amount of data and hardware resources have gradually increased. Meanwhile, CNN also reveals salient redundancy in several tasks. We propose a novel automatic channel pruning method (ACP).
 ![Framework of the proposed ACP.](https://github.com/JingfeiChang/ACP-Automatic-Channel-Pruning/blob/main/figure/Figure.png)
 ## Tips
