@@ -246,16 +246,16 @@ def load_vgg_particle_model(model, random_rule):
                     l1_sum = list(torch.sum(torch.abs(oriweight), [1, 2, 3]))
                     select_index = list(map(l1_sum.index, heapq.nlargest(currentfilter_num, l1_sum)))
                     # heapq.nlargest(n, iterable[, key]) Return a list with the n largest elements from the dataset defined by iterable
-                    # map(function, iterable, ...) 根据提供的函数对指定序列做映射
-                    # list.index(x[, start[, end]]) 函数用于从列表中找出某个值第一个匹配项的索引位置。x-- 查找的对象。start-- 可选，查找的起始位置。end-- 可选，查找的结束位置。
+                    # map(function, iterable, ...) 
+                    # list.index(x[, start[, end]]) 
                     select_index.sort()
                 if last_select_index is not None:
                     for index_i, i in enumerate(select_index):
-                        # enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。
+                        # enumerate() 
                         for index_j, j in enumerate(last_select_index):
                             state_dict[name + '.weight'][index_i][index_j] = \
                                 oristate_dict[name + '.weight'][i][j]
-                                # 应该是从原始权重集中继承权重到新的模型
+                               
                 else:
                     for index_i, i in enumerate(select_index):
                         state_dict[name + '.weight'][index_i] = \
@@ -272,15 +272,14 @@ def load_vgg_particle_model(model, random_rule):
                     l1_sum = list(torch.sum(torch.abs(oriweight), [0, 2, 3]))
                     select_index = list(map(l1_sum.index, heapq.nlargest(currentfilter_num, l1_sum)))
                     # heapq.nlargest(n, iterable[, key]) Return a list with the n largest elements from the dataset defined by iterable
-                    # map(function, iterable, ...) 根据提供的函数对指定序列做映射
-                    # list.index(x[, start[, end]]) 函数用于从列表中找出某个值第一个匹配项的索引位置。x-- 查找的对象。start-- 可选，查找的起始位置。end-- 可选，查找的结束位置。
+                    # map(function, iterable, ...) 
+                    # list.index(x[, start[, end]]) 
                     select_index.sort()
                 for index_i, i in enumerate(select_index):
-                    # enumerate() 函数用于将一个可遍历的数据对象(如列表、元组或字符串)组合为一个索引序列，同时列出数据和数据下标，一般用在 for 循环当中。
+                    # enumerate() 
                     state_dict[name + '.weight'][:, index_i, :, :] = \
                         oristate_dict[name + '.weight'][:,i, :, :]
-                             # 应该是从原始权重集中继承权重到新的模型
-
+                         
                 
                 last_select_index = None
 
@@ -861,7 +860,7 @@ def PSOPruning():
         Velud[i].code = copy.deepcopy(VelSource[i].code)
         
         param2change = np.random.randint(0, food_dimension-1, args.channelchange_num)
-        # numpy.random.randint(low, high=None, size=None, dtype='l'):返回一个随机整型数，范围从低（包括）到高（不包括），即[low, high)
+        
         
         R = random.uniform(0,1)
  
