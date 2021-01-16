@@ -9,7 +9,6 @@ from thop import profile
 
 parser = argparse.ArgumentParser(description='PyTorch CIFAR10 Training')
 
-
 parser.add_argument(
     '--arch',
     type=str,
