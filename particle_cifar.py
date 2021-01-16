@@ -896,18 +896,6 @@ def PSOPruning():
             
         FoodSource[i].code = copy.deepcopy(Particle[i].code)
         VelSource[i].code = copy.deepcopy(Velud[i].code)
-    
-
- #Memorize best food source
-def memorizeBestSource():
-    global gbest, FoodSource
-    for i in range(args.food_number):
-        if FoodSource[i].fitness > gbest.fitness:
-            #print(FoodSource[i].fitness, FoodSource[i].code)
-            #print(gbest.fitness, gbest.code)
-            gbest.code = copy.deepcopy(FoodSource[i].code)
-            gbest.fitness = FoodSource[i].fitness
-
 
 def main():
     global w
@@ -933,7 +921,6 @@ def main():
 
             initialize()
 
-            #memorizeBestSource()
 
             for cycle in range(args.max_cycle):
                 
@@ -948,7 +935,6 @@ def main():
 
                 PSOPruning() 
                   
-                #memorizeBestSource() 
 
             print('==> PSOPruning Complete!')
             pso_end_time = time.time()
