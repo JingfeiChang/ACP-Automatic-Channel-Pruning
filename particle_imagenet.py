@@ -398,7 +398,6 @@ def load_resnet_particle_model(model, random_rule):
 
     model.load_state_dict(state_dict)
 
-
 # Training
 def train(model, optimizer, trainLoader, args, epoch, topk=(1,)):
     model.train()
