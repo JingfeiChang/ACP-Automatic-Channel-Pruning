@@ -38,13 +38,13 @@ class VGG(nn.Module):
         return nn.Sequential(*layers)
 
 
-class BeeVGG(nn.Module):
-    def __init__(self, honeysource, num_classes=10):
-        super(BeeVGG, self).__init__()
-        self.honeysource = honeysource
+class PSOVGG(nn.Module):
+    def __init__(self, foodsource, num_classes=10):
+        super(PSOVGG, self).__init__()
+        self.foodsource = foodsource
         self.features = self._make_layers(cfg)
         self.classifier = nn.Sequential(
-            nn.Linear(int(512 * honeysource[len(honeysource)-1] / 10) * 7 * 7, 4096),
+            nn.Linear(int(512 * foodsource[len(foodsource)-1] / 10) * 7 * 7, 4096),
             nn.ReLU(inplace=True),
             nn.Dropout(),
             nn.Linear(4096, 4096),
@@ -69,7 +69,7 @@ class BeeVGG(nn.Module):
                 layers += [nn.MaxPool2d(kernel_size=2, stride=2)]
                 Mlayers += 1
             else:
-                x = int(x * self.honeysource[x_index - Mlayers] / 10)
+                x = int(x * self.foodsource[x_index - Mlayers] / 10)
                 if x == 0:
                     x = 1
                 layers += [nn.Conv2d(in_channels, x, kernel_size=3, padding=1),
@@ -78,14 +78,6 @@ class BeeVGG(nn.Module):
                 in_channels = x
         return nn.Sequential(*layers)
 
-'''
-def test():
-    honey = [5,6,1,2,3,4,5,6,7,3,1,1,1]
-    model = BeeVGG(honey)
-    print(model)
-
-test()
-'''
 
 
 
