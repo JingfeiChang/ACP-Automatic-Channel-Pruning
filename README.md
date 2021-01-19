@@ -2,7 +2,7 @@
 
 As the convolutional neural network (CNN) gets deeper and wider in recent years, the requirements for the amount of data and hardware resources have gradually increased. Meanwhile, CNN also reveals salient redundancy in several tasks. We propose a novel automatic channel pruning method (ACP).
 The framework of the proposed ACP is as follows.
-![Framework of the proposed ACP.](https://github.com/JingfeiChang/ACP-Automatic-Channel-Pruning/blob/main/figure/Figure.png)
+![Framework of the proposed ACP.](https://github.com/JingfeiChang/ACP-Automatic-Channel-Pruning/blob/main/Framework%20of%20ACP.jpg)
 ## Tips
 Any problem, free to contact the author via email: cjfhfut@mail.hfut.edu.cn
 ## Experimental Results
