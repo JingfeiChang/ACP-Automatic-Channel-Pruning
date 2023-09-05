@@ -1,7 +1,9 @@
 ## ACP (Automatic Channel Pruning) 
 ### Code for the paper
 [Automatic channel pruning via clustering and swarm intelligence optimization for CNN](https://link.springer.com/article/10.1007/s10489-022-03508-1)   
-Chang, J., Lu, Y., Xue, P. et al. Automatic channel pruning via clustering and swarm intelligence optimization for CNN. Appl Intell 52, 17751–17771 (2022). https://doi.org/10.1007/s10489-022-03508-1
+Chang, J., Lu, Y., Xue, P. et al. Automatic channel pruning via clustering and swarm intelligence optimization for CNN. Appl Intell 52, 17751–17771 (2022).  
+       
+       https://doi.org/10.1007/s10489-022-03508-1
 ### Introduction
 As the convolutional neural network (CNN) gets deeper and wider in recent years, the requirements for the amount of data and hardware resources have gradually increased. Meanwhile, CNN also reveals salient redundancy in several tasks. We propose a novel automatic channel pruning method (ACP).
 The framework of the proposed ACP is as follows.
